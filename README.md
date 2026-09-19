@@ -1,8 +1,8 @@
-# NeuroVector — Vector Search & RAG Engine
+# VectorLens — Vector Search & RAG Engine
 
 A Python-based vector search and Retrieval-Augmented Generation (RAG) engine that explores how vector databases, similarity search, embeddings, and local LLMs work under the hood.
 
-NeuroVector implements HNSW, KD-Tree, and Brute Force search algorithms, supports Cosine, Euclidean, and Manhattan distance metrics, provides an interactive 2D PCA visualization, and includes a document-based RAG pipeline powered by local AI models through Ollama.
+VectorLens implements HNSW, KD-Tree, and Brute Force search algorithms, supports Cosine, Euclidean, and Manhattan distance metrics, provides an interactive 2D PCA visualization, and includes a document-based RAG pipeline powered by local AI models through Ollama.
 
 ---
 
@@ -33,7 +33,7 @@ NeuroVector implements HNSW, KD-Tree, and Brute Force search algorithms, support
 
 ## How It Works
 
-NeuroVector has two main parts:
+VectorLens has two main parts:
 
 1. A demo vector database for exploring vector search algorithms.
 2. A document-based RAG system for semantic search and AI question answering.
@@ -105,7 +105,7 @@ When a question is asked, the question is converted into an embedding and compar
 
 **HNSW (Hierarchical Navigable Small World)** is a graph-based approximate nearest-neighbor search algorithm.
 
-NeuroVector implements the HNSW data structure directly in Python rather than relying on an external HNSW library for the core search implementation.
+VectorLens implements the HNSW data structure directly in Python rather than relying on an external HNSW library for the core search implementation.
 
 The graph is organized into multiple layers:
 
@@ -174,7 +174,7 @@ Although this approach becomes expensive for large datasets, it provides an exac
 
 # Distance Metrics
 
-NeuroVector supports three distance metrics.
+VectorLens supports three distance metrics.
 
 ## Cosine Distance
 
@@ -250,7 +250,7 @@ The application returns the nearest vectors along with their distance values.
 
 The demo vectors exist in a 16-dimensional space.
 
-Because 16 dimensions cannot be directly visualized on a normal 2D screen, NeuroVector uses **Principal Component Analysis (PCA)** to project the vectors into two dimensions.
+Because 16 dimensions cannot be directly visualized on a normal 2D screen, VectorLens uses **Principal Component Analysis (PCA)** to project the vectors into two dimensions.
 
 ```text
 16D Vector Space
@@ -271,7 +271,7 @@ The visualization makes it easier to understand how vectors from different seman
 
 # Document Embeddings
 
-NeuroVector supports real document embeddings using Ollama.
+VectorLens supports real document embeddings using Ollama.
 
 Documents are sent to:
 
@@ -396,8 +396,8 @@ No C++ compiler is required.
 ## 1. Clone the Repository
 
 ```powershell
-git clone https://github.com/Shakir-j/NeuroVector.git
-cd NeuroVector
+git clone https://github.com/Shakir-j/VectorLens.git
+cd VectorLens
 ```
 
 ## 2. Create a Virtual Environment
@@ -468,7 +468,7 @@ for RAG answer generation.
 
 ---
 
-# Running NeuroVector
+# Running VectorLens
 
 Activate the virtual environment:
 
@@ -629,7 +629,7 @@ http://localhost:8080
 # Project Structure
 
 ```text
-NeuroVector/
+VectorLens/
 │
 ├── app/
 │   ├── api.py
